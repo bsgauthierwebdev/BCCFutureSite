@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
 import React from "react";
+import {Link} from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -14,6 +15,7 @@ function Navbar() {
       >
         <li>Event</li>
         <li>About Us</li>
+        <li><Link to = '/organizers'>Organizers</Link></li>
         <li>Blog</li>
         <li>Sponsor</li>
         <li>Volunteer</li>
