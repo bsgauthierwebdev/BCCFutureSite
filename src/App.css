@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@font-face {
+  font-family: 'PingFang-SC'; 
+  src: url('./assets/fonts/PingFang-SC-Regular.ttf'); 
+}
 :root{
   --primary-purple:  #1f0834;
   --secondary-purple:  #30123B;
@@ -8,11 +11,16 @@
   --secondary-white: #B6B6B6;
   --primary-font:  'raleway', sans-serif;
   --secondary-font: 'roboto', sans-serif;
+  --tertiary-font: 'PingFang-SC', sans-serif;
 }
 
 body{
   margin: 0;
   background-color: var(--primary-purple);
+}
+main{
+  max-width: 1262px;
+  margin: 0 auto;
 }
 p{
   margin: 0;

@@ -1,12 +1,12 @@
 import "./Footer.css";
-// import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-  faSlack
-} from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faFacebook,
+//   faGithub,
+//   faLinkedin,
+//   faSlack
+// } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
@@ -41,7 +41,7 @@ function Footer() {
         
       <div className="bottom-half"> 
         <p>© 2024 Baltimore Code and Coffee All rights reserved.</p>
-        <ul className="social-list">
+        {/* <ul className="social-list">
           <li>
             {" "}
             <FontAwesomeIcon icon={faGithub} />
@@ -58,7 +58,7 @@ function Footer() {
             {" "}
             <FontAwesomeIcon icon={faSlack} />
           </li>
-        </ul>
+        </ul> */}
       </div>
      
     </footer>
