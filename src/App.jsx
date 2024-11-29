@@ -1,11 +1,3 @@
-import React from "react"
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import Navbar from "./components/Navbar"
-import HomeView from './components/HomeView/HomeView'
-import Footer from './components/Footer/Footer'
-import './App.css'
-import Organizers from "./components/Organizers/Organizers"
-
 // src/App.jsx
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
@@ -16,18 +8,9 @@ import EventCal from "./components/EventCal/EventCal";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Blog from "./components/Blog/Blog";
 import Volunteer from "./components/Volunteer/Volunteer";
+import Organizers from './components/Organizers/Organizers'
 
 function App() {
-	return (
-		<Router>
-			<Navbar />
-			<Routes>
-				<Route path="/" element={<HomeView />} />
-				<Route path = '/organizers' element = {<Organizers />} />
-			</Routes>
-			<Footer />
-		</Router>
-	)
   return (
     <Router>
       <Navbar />
@@ -38,6 +21,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/volunteer" element={<Volunteer />} />
+        <Route path="/oganizers" element={<Organizers />} />
       </Routes>
     </Router>
   );
