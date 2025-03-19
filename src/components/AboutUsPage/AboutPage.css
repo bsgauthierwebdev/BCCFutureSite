@@ -132,8 +132,8 @@ becuase there appears to be differnet defualt spacing on them */
  
 /* Ensure the images are consistent */
 .gallery-item1 img, .gallery-item2 img {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -167,10 +167,6 @@ vertical-align: middle
     }
 
 
-    .gallery-item1 img, .gallery-item2 img {
-        width: 180px;
-        height: 180px;
-    }
 
 
     .row-1  {
@@ -193,6 +189,20 @@ vertical-align: middle
 
 
 
+@media (max-width: 770px) {
+    .about-us-top .about-us-h1 {
+   
+        font-size: var(--heading-mobile);
+        align-items: center;
+    }
+    .gallery-item1 img, .gallery-item2 img {
+        width: 230px;
+        height: 230px;
+    }
+    
+
+}
+
 /* Mobile View */
 @media (max-width: 670px) {
     .about-us {
@@ -203,13 +213,6 @@ vertical-align: middle
         grid-template-columns: none; /* Maximum of 3 items per row */
     
     }
-
-
-    .gallery-item1 img, .gallery-item2 img {
-        width: 180px;
-        height: 180px;
-    }
-
 
     .row-1  {
         display: flex; 
@@ -229,19 +232,6 @@ vertical-align: middle
 
 }
 
-@media (max-width: 770px) {
-    .about-us-top .about-us-h1 {
-   
-        font-size: var(--heading-mobile);
-        align-items: center;
-    }
-    .gallery-item1 img, .gallery-item2 img {
-        width: 210px;
-        height: 210px;
-    }
-    
-
-}
 
 /* Small Mobile View */
 @media (max-width: 515px) {

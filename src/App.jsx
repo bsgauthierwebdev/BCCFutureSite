@@ -9,11 +9,12 @@ import AboutUsPage from "./components/AboutUsPage/AboutPage";
 import Blog from "./components/Blog/Blog";
 import Footer from "./components/Footer/Footer";
 import Volunteer from "./components/Volunteer/Volunteer";
-
+import ScrollToTop from './ScrollToTop';
 function App() {
   return (
     <div id="root">
     <Router>
+    <ScrollToTop />
       <Navbar />
       <div class="bg-fixed"></div>
       <div className="content">
